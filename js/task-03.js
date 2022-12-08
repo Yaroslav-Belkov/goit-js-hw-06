@@ -23,11 +23,11 @@ const images = [
   },
 ];
 
-// const list = document.querySelector(".gallery");
+const list = document.querySelector(".gallery");
 
-// const markup = images
-//   .map((img) => `<li> <img src="${img.url}" alt="${img.alt}" /> </li>`)
-//   .join("");
+const markup = images
+  .map((img) => `<li> <img src="${img.url}" alt="${img.alt}" /> </li>`)
+  .join("");
 
-// list.insertAdjacentHTML("beforeend", markup);
-// console.log(markup);
+list.insertAdjacentHTML("beforeend", markup);
+console.log(markup);
