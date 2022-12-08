@@ -33,3 +33,5 @@ const elementListLength = elementList.length
 console.log(`Category: ${elementTitle}`)
 console.log(`Elements: ${elementListLength}`)
 })
+
+// ready!
