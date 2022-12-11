@@ -31,16 +31,32 @@ const ingredients = [
 
 // 2) Варіант
 
-ingredients.forEach((element) => {
+// ingredients.forEach((element) => {
 
-  const ingridientsListEl = document.createElement('li')
-  ingridientsListEl.textContent = element;
-  ingridientsListEl.classList.add('item')
+//   const ingridientsListEl = document.createElement('li')
+//   ingridientsListEl.textContent = element;
+//   ingridientsListEl.classList.add('item')
 
-  console.log(ingridientsListEl)
+//   console.log(ingridientsListEl)
 
-  const listEl = document.querySelector('#ingredients');
-  listEl.appendChild(ingridientsListEl);
+//   const listEl = document.querySelector('#ingredients');
+//   listEl.appendChild(ingridientsListEl);
 
 
+// })
+
+// 3) Варіант
+
+const listEl = document.querySelector('#ingredients')
+
+const elements = ingredients.map(element=> {
+  const ingredientItem = document.createElement('li');
+  ingredientItem.classList.add('item');
+  ingredientItem.textContent = element;
+
+return ingredientItem
 })
+
+listEl.append(...elements)
+
+console.log(listEl)
